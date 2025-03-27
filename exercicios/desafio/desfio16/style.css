@@ -1,0 +1,39 @@
+body {
+    background-color: #727171;
+}
+div {
+    background-color: #929292;
+    border-radius: 30px;
+    padding: 12px;
+    margin: 10px;
+}
+main {
+    background-color: rgb(255, 255, 255);
+    border: 5px, solid,  rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    box-shadow: 5px 0px 7px rgba(0, 0, 0, 0.56); 
+}
+h1 {
+  margin: auto;
+  text-align: center;
+}
+h2 {
+    margin: auto;
+    text-align: center;
+}
+#vscode {
+    margin-top: 20px;
+}
+a {
+    color: black;
+}
+.titulo {
+    color: #E29324;
+    font-family: 'Times New Roman', Times, serif;
+}
+a:hover {
+    text-decoration: none;
+    color: #E29324;
+}

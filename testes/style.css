@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+ header {
+    border-radius: 15px;
+    padding: 33px;
+    margin: auto;
+    color: #000000;
+    background-color: #ffff;
+ }
+ body {
+   background-image: linear-gradient(to left, #9FC131, #DBF227);
+ }
+ main {
+    background-color: #3AF007;
+    padding: 40px;
+    margin: auto;
+    border-radius: 13px;
+ }
+ h1 {
+    font-family: "Ballet", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 0, 0);
+    text-align: center; left: j;
+    background-color: #ffff;
+    border-radius: 14px;
+    }
+ h2 {
+   font-family: 'Berckshire Swash';
+    color: yellow;
+    text-align: center;
+    background-color: #ffff;
+    border-radius: 14px;
+ }
+ section {
+    background-color: #ffff;
+    border-radius: 14px;
+    padding: 24px;
+    margin: auto;
+ }
+ nav {
+   background-color: rgb(255, 255, 255);
+   padding: 17px;
+   margin: auto;
+   border-radius: 14px;
+}
+article {
+   background-color: #ffff;
+   padding: 44px;
+   margin: auto;
+   border-radius: 15px;
+}

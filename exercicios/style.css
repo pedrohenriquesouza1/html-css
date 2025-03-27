@@ -1,0 +1,177 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Monsieur+La+Doulaise&display=swap');
+ @font-face {
+    font-family: 'Romanus';
+    src: url('midia-arquivo/CAESAR.TTF') format('truetype');
+ }
+ :root {
+    --cor01: #9FC131;
+    --cor02: #DBF227;
+    --font-principal: 'Romanus';
+ }
+header {
+    background-color: #ffff;
+    padding: 14px;
+    border-radius: 15px;
+    margin: auto;
+}
+main {
+    background-color: #ffff;
+    padding: 14px;
+    border-radius: 13px;
+    margin: auto;
+    border-radius: 14px;
+    background-image: linear-gradient(to right, var(--cor01)), var(--cor02);
+    height: max-content;
+}
+section {
+    background-color: #ffff;
+    padding: 14px;
+    border-radius: 13px;
+    margin: auto;
+    border-radius: 10px;
+}
+article {
+    background-color: #ffff;
+    padding: 14px;
+    border-radius: 13px;
+    margin: auto;
+    border-radius: 9px;
+}
+footer {
+    background-color: #ffff;
+    padding: 14px;
+    border-radius: 13px;
+    margin: auto;
+    border-radius: 12px;
+    text-decoration: underline;
+}
+h1 {
+    color: rgb(0, 0, 255);
+    font-family: 'Romanus';
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 13px;
+    padding: 4px;
+    margin: auto;
+}
+h2 {
+    color: rgb(138, 43, 226);
+    padding: 12px;
+    margin: auto;
+    font: italic, normal, 8px, 'Anonymus', sans-serif;
+    background-color: #ffff;
+    border-radius: 11px;
+    text-align: center;
+}
+
+body {
+    background-image: linear-gradient(to right, #9FC131, #DBF227);
+    height: max-content;
+    font-family: var(--font-principal);
+}
+nav {
+   background-color: #ffff;
+   padding: 9px;
+   margin: auto;
+   border-radius: 8px;
+}
+#pricipal {
+    color: hsl(67, 61%, 41%);
+}
+#nao-principal{
+    color: rgb(244, 16, 16);
+    text-align: start;
+    text-decoration: dotted;
+    font-family: "Anonymus";
+    text-decoration: underline;
+}
+.subtitulo {
+    color: #DBF227;
+    background-color: rgb(255,255,255);
+    text-align: left;
+    text-decoration: dotted;
+}
+.assunto {
+    color: rgba(131, 146, 116, 0.745);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 15px;
+    border-radius: 14px;
+}
+div {
+    color: #768126d0;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 350px;
+    border: 2px, solid, #000000;
+    text-align: center;
+    display: inline-block;
+}
+#caixa-a {
+    color:#9FC131;
+    font-size: larger;
+}
+#caixa-b {
+    color: #363936;
+    font-size: larger;
+}
+#caixa-c {
+    color: rgba(255, 254, 252, 0.902);
+    font-size: larger;
+    border-radius: 50px;
+}
+div:hover {
+    background-color: #4cc255;
+    color: black;
+    font-family: var(--font-principal);
+}
+div > p {
+    display: none;
+    font-size: larger;
+}
+div:hover > p {
+    display: block;
+    color: rgb(255, 0, 0);
+}
+#link {
+    background-color: #ffff;
+    display: block;
+    border: 3px, double, rgb(30, 206, 206);
+}
+a {
+    text-decoration: none;
+    color: var(--cor02);
+}
+#link:visited {
+    color: rgb(24, 210, 107);
+    text-decoration: none;
+}
+a::after {
+    content: 'þ';
+    color: black;
+}
+a::before {
+    content: '™';
+    color: black;
+
+}
+a:hover {
+   text-decoration: underline;
+   color: hsl(120, 81%, 54%); 
+}
+#bola {
+    border-radius: 60%;
+    background-color: #000000a7;
+    height: 313px;
+    margin: auto;
+    display: inline-block;
+}
+#borda {
+    padding: 20px;
+    border-width: 40px;
+    display: block;
+    border-image: url(midia-arquivo/borda1.png), 20, repeat;
+}
