@@ -1,0 +1,158 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');   /* 
+
+   MEU SITE NÃO ESTÁ COM IMAGENS ADAPTÁVEIS POIS NÃO CONSEGUI REDIMENSIONAR ELAS!!! 
+
+*/
+
+@font-face {
+    font-family: 'Lion';
+    src: url('lion_king.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    /* cores var */
+    --cor0: #ffffff;
+    --cor1: #ff0000;
+    --cor2: #ffff00;
+    --cor3: #00309a;
+    --cor-fundo: #b6d2ea;
+    /* fontes var */
+
+    --fonte-titulo: 'Lion';
+    --fonte-h1: 'Ballet';
+    --fonte-especial: 'Garamond';
+}
+
+body {
+    background-color: #B6D2EA;
+    margin: 0; /* Removendo 'px' desnecessário */
+    color: black;
+    font-family: 'Times New Roman', Times, serif; /* Fonte padrão mais genérica */
+    left: 30px;
+    top: 0; /* Removendo 'px' desnecessário */
+    font-size: 12px; /* Simplificando a declaração 'font' */
+    font-weight: 400; /* Simplificando a declaração 'font' */
+}
+
+header {
+    margin: 0;
+    height: 100px;
+    background-color: #326332;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.345);
+    padding: 50px 50px 50px 0;
+}
+
+nav {
+    background-color: #326332;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+    font-weight: bolder;
+}
+
+a:visited {
+    text-decoration: underline;
+    color: rgb(0, 140, 255);   /* NÃO FUNCIONA NO GOOGLE CRHOME DE ACORDO COM MEUS TESTES*/  
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+header h1 {
+    padding-bottom: 10px;
+    font-family: 'Lion';
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.345);
+    font-size: 3em;
+}
+
+#especial {
+    font: italic bold 50px var(--fonte-especial);
+    text-align: center;
+}
+
+.titulo-secundario{
+    font-family: 'Ballet', cursive;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.descricao {
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.345);
+    margin-left: 400px;
+    margin-right: 250px;
+    display: block;
+}
+
+main {
+    background-color: var(--cor0);
+    margin: 10px;
+    border: 2px solid var(--cor-fundo);
+    border-radius: 14px;
+    padding: 2em;
+}
+
+.conteudo  p{
+    text-align: center;
+    text-indent: 1em;
+}
+
+footer {
+    background-color: var(--cor0);
+    text-align: center;
+}
+
+#rodape {
+    padding: 0;
+    background-color: var(--cor0);
+}
+
+#video {
+    background-color: var(--cor-fundo);
+    padding: 20px;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    position: relative;
+    height: 0;
+    max-width: 96%;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.345) 1px 2px 4px;
+}
+  
+#video iframe {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+#externo {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}

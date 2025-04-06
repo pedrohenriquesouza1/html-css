@@ -9,6 +9,7 @@
  }
  body {
    background-image: linear-gradient(to left, #9FC131, #DBF227);
+   margin: 0px;
  }
  main {
     background-color: #3AF007;
