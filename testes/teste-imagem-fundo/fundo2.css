@@ -1,0 +1,8 @@
+body {
+    background-color: white;
+}
+
+.imagem {
+    background-image: url('wallpaper002.jpg');
+    padding: 10px;
+}
