@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+    overflow-x: scroll;
+}
+
+table {
+    margin: auto;
+    background-color: white;
+    border: 3px solid rgba(0, 0, 0, 0.6);
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 500px;
+    position: relative;
+}
+
+caption {
+    background-color: #bcb6b9;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 3px solid rgba(0, 0, 0, 0.6);
+    padding: 5px;
+}
+
+thead tr th {
+    position: sticky;
+    top: 0;
+    background-color: #bcb6b9;
+}
+
+table tbody  tr:nth-child(2n) {
+    background-color: rgb(211, 211, 211);
+}
+
+td {
+    padding: 6px;
+    margin: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: transparent;
+}
+
+th {
+    background-color: rgba(32, 32, 32, 0.261);
+    padding: 10px;
+    width: 60px;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.num {
+    text-align: right;
+}
+
+#rodape {
+    background-color: rgba(32, 32, 32, 0.261);
+    color: white;
+    text-align: center;
+    margin: auto;
+}
