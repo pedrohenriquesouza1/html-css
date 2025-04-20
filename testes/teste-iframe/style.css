@@ -1,0 +1,13 @@
+body {
+    background-color: aqua;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+iframe {
+    background-color: white;
+    width: 98vw;
+    height: 400px;
+    border: 1px solid black;
+}
+
