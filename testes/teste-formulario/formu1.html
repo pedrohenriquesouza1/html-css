@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário /01</h1>
+    <form action="form.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Login</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" autocomplete="username" size="15" maxlength="15" placeholder="Nome de usuário" required>
+            </p>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="senha" required size="15" minlength="8" maxlength="16">
+            </div>
+        </fieldset>
+        <div>
+            <label for="note">Notas:</label>
+            <input type="number" name="note" id="nota" step="any">
+        </div>
+          <!-- <div>
+                <h1>Gostou?</h1>
+            </div>
+        <div>
+            <label for="checkbox">Sim</label>
+            <input type="checkbox" name="checkbox" id="caixinha">
+            <label for="checkbox">não</label>
+            <input type="checkbox" name="checkbox" id="caixinha">
+        </div> -->
+        <p>
+            <label for="mail">E-mail:</label>
+            <input type="mail" name="mail" id="email" maxlength="30" size="30" required>
+        </p>
+        <p>
+            <label for="tel">Telefone</label>
+            <input type="tel" name="telefone" id="tel" maxlength="15" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"placeholder="(11) 91234-5678">
+        </p>
+        <div>
+            <input type="submit" value="entrar" class="button" style="margin-top: 10px;">
+        </div>
+        <div>
+            <input type="reset" value="apagar dados" class="button">
+        </div>
+    </form>
+</body>
+</html>
