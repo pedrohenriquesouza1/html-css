@@ -38,7 +38,30 @@
             <label for="tel">Telefone</label>
             <input type="tel" name="telefone" id="tel" maxlength="15" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}"placeholder="(11) 91234-5678">
         </p>
+        <p>
+            <label for="num1">Número 1: </label>
+            <input type="number" name="num" id="num1" required placeholder="Escreva um número aqui" oninput="total.innerHTML = Number(num1.value) + Number(num2.value)">
+        </p>
+        <p>
+            <label for="num2">Número2: </label>
+            <input type="number" name="num" id="num2" placeholder="Escreva um número aqui" oninput="total.innerHTML = Number(num1.value) + Number(num2.value)" required>
+        </p>
+        <p>
+            <output id="total">
+                0
+            </output>
+        </p>
+        
+            <div>
+                <textarea name="msg" id="msg" cols="50" rows="20" placeholder="Digite sua mensagem aqui..."></textarea>
+            </div>
+        <!--Placeholder funcionando--> 
         <div>
+            <div>
+                <label for="brr">Nível de experiência</label>
+                <input type="range" name="barra" id="brr" required min="0" max="10" oninput="result.innerHTML = Number(brr.value)">
+                <output id="result">5</output>
+            </div>
             <input type="submit" value="entrar" class="button" style="margin-top: 10px;">
         </div>
         <div>
