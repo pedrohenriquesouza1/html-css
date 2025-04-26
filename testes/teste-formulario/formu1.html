@@ -24,16 +24,13 @@
             <label for="note">Notas:</label>
             <input type="number" name="note" id="nota" step="any">
         </div>
-          <!-- <div>
-                <h1>Gostou?</h1>
-            </div>
-        <div>
-            <label for="checkbox">Sim</label>
-            <input type="checkbox" name="checkbox" id="caixinha">
-            <label for="checkbox">não</label>
-            <input type="checkbox" name="checkbox" id="caixinha">
-        </div> -->
-        <p>
+          <fieldset>
+            <legend>Sexo</legend>
+              <div>
+                <input type="radio" name="sexo" id="sxfem" required value="F"> <label for="sxfem">Feminino</label>
+                <input type="radio" name="sexo" id="sxmas" required value="M"> <label for="sxmas">Masculino</label>
+              </div>
+          </fieldset>
             <label for="mail">E-mail:</label>
             <input type="mail" name="mail" id="email" maxlength="30" size="30" required>
         </p>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="form.php" method="post" autocomplete="on">
+        <p>
+            <label for="cor">Cor</label>
+            <input type="color" name="cor" id="cor" value="#ffffff">
+        </p>
+        <p>
+            <label for="nvl">Nível de conhecimento:</label>
+            <input type="range" name="nivel" id="nvl" min="0" max="10" value="0">
+        </p>
+        <p>
+            <label for="sxmas">Masculino</label>
+            <input type="radio" name="sexo" id="sxmas" required>
+            <label for="sxfem">Feminino</label>
+            <input type="radio" name="sexo" id="sxfem">
+        </p>
+        <p>
+            <label for="check">O que você prefere?</label>
+            <label for="check1">Macarrão</label>
+            <input type="checkbox" name="checkbox" id="check1">
+            <label for="check2">Strogonoff</label>
+            <input type="checkbox" name="checkbox" id="check2">
+            <label for="check3">Parmegiana</label>
+            <input type="checkbox" name="checkbox" id="check3">
+            <label for="check4">Filé Mignon</label>
+            <input type="checkbox" name="checkbox" id="check4">
+            <label for="check5">Picanha</label>
+            <input type="checkbox" name="checkbox" id="check5">
+        </p>
+        <p>
+            <input type="submit" value="Enviar" class="button">
+            <input type="reset" value="Apagar Dados" class="button">
+        </p>
+        
+    </form>
+</body>
+</html>
