@@ -48,4 +48,58 @@
 \
 @media screen and (min-width: 1400px) /* desktop grande o e maiores */\{\
     \
-\}}
+\}\
+\
+\
+\
+\
+DESAFIO FORMUL\'c1RIO ESTILO TABRETRATO:\
+@media screen and (min-width: 768px)  /* sem media interna, uso arquivos separados */\{\
+  /* 1. Aumentar tamanhos de texto */\
+  h1 \{\
+    font-size: 24px;\
+  \}\
+\
+  input,\
+  select,\
+  textarea,\
+  label \{\
+    font-size: 1.1rem;\
+  \}\
+\
+  /* 2. Layout em colunas para campos duplos */\
+  .duplo \{\
+    display: flex;\
+    gap: 20px;\
+  \}\
+\
+  .duplo .campo \{\
+    flex: 1;\
+  \}\
+\
+  /* 3. Expandir o container do formul\'e1rio */\
+  .container \{\
+    max-width: 700px;\
+    margin: auto;\
+  \}\
+\
+  /* 4. Aumentar espa\'e7amentos */\
+  fieldset \{\
+    padding: 20px;\
+  \}\
+\
+  input,\
+  select,\
+  textarea \{\
+    padding: 12px;\
+  \}\
+\
+  /* 5. Posicionamento de bot\'f5es */\
+  .btn \{\
+    text-align: right;\
+    margin-right: 0;\
+    margin-left: auto;\
+    display: block;\
+  \}\
+\}\
+ }

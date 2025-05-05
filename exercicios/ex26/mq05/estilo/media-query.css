@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* Tipo de dispositivo  \ Largura mínima recomendada
+Extra pequeno (telefone em pé)/	0px – 479px
+Pequeno (telefone grande)	/480px – 767px
+Médio (tablet retrato)/	768px – 991px
+Grande (tablet paisagem / desktop pequeno)/	992px – 1199px
+Extra grande (desktop padrão)	/ 1200px – 1399px
+Ultra grande (monitores 2K ou mais)	/ 1400px+ */
+
+@media screen and (min-width: 1199px)  {  
+    #burger {
+        display: none;
+    }
+
+    #it {
+        display: block;
+    }
+
+    li {
+        display: inline-block;
+        margin: 10px;
+    }
+}
