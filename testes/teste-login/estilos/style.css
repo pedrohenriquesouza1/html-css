@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+/* Tipo de dispositivo Largura mínima recomendada:
+Extra pequeno (telefone em pé) / 0px – 479px
+Pequeno (telefone grande) / 480px – 767px
+Médio (tablet retrato) 768px – 991px
+Grande (tablet paisagem / desktop pequeno) 992px – 1199px
+Extra grande (desktop padrão) / 1200px – 1399px
+Ultra grande (monitores 2K ou mais) / 1400px+ */
+
 @media all {
     * {
         margin: 0;
@@ -8,9 +16,69 @@
     }
 
     body {
-        width: 100vw;
-        height: 100vh;
+        height: 100%;
+        width: 100%;
+        background: var(--cor-login) linear-gradient(to left, var(--cor-gradient1), var(--cor-gradient2));
     }
 
-    
+    :root {
+        --cor-login: #ffff;
+        --cor-gradient1: #e0e0e0;
+        --cor-gradient2: #9e9e9e;
+        --btn-text: #7f8c8d;
+        --btn-hover: #aebebf;
+        --cor-destaque: #27ae60;
+    }
+
+    main {
+        width: 100%;
+        height: 99%;
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    #login {
+        position: absolute;
+        top: 31%;
+        left: 20%;
+        background-color: white;
+        width: 60%;
+        margin: auto;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.360);
+        overflow: hidden;
+        border-radius: 15px;
+        transition: width .3s, height .3s;
+        transition-timing-function: ease;
+    }
+
+    #imagem {
+        overflow: hidden;
+        background: var(--cor-login) url(../imagens/imagem-tela-login.jpg);
+        width: 40%;
+        float: left; 
+        background-size: cover;
+        position: absolute;
+        top: -12px;
+        left: -19px;
+        height: 300px;
+    }
+
+    #formulario {
+        background-color: transparent;
+        width: 60%;
+        text-align: center;
+        padding: 10px;
+        float: right;
+    }
+
+    .campo {
+        background-color: var(--cor-destaque);
+        padding: 3px;
+        margin: 3px 0px;
+        text-align: left;
+        border-radius: 3px;
+        border: none;
+        width: 100%;
+        height: 50px;
+    }
 }
