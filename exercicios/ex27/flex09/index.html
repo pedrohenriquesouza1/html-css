@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            background-color: rgb(93, 136, 8);
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start; /* padrão */
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            height: 600px;
+        }
+
+        .item {
+            background-color: red;
+            border: 1px solid black;
+            flex-basis: 200px;
+            text-align: center;
+            padding: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item" id="esp">G</div>
+    </div>
+</body>
+</html>
