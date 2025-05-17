@@ -27,6 +27,10 @@ header {
     justify-content: space-around;
 }
 
+#menu {
+    display: none;
+}
+
 nav {
     display: flex;
     flex-flow: row wrap;
@@ -65,8 +69,9 @@ main {
     max-width: 700px;
 }
 
-h1 {
+header h1 {
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.365);
+    color: #ffff;
 }
 
 p {
