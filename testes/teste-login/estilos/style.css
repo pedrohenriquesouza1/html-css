@@ -32,18 +32,19 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
 
     main {
         width: 100%;
-        height: 99%;
+        height: 99vh;
         display: flex;
         flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: center;
     }
 
     #login {
-        position: absolute;
-        top: 31%;
-        left: 20%;
         background-color: white;
         width: 60%;
-        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.360);
         overflow: hidden;
         border-radius: 15px;
@@ -58,9 +59,10 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
         float: left; 
         background-size: cover;
         position: absolute;
-        top: -12px;
-        left: -19px;
-        height: 300px;
+        top: 13%;
+        left: 58%;
+        height: 22%;
+        border-radius: 15px;
     }
 
     #formulario {
@@ -69,6 +71,10 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
         text-align: center;
         padding: 10px;
         float: right;
+        display: flex;
+        flex-flow: column wrap;
+        flex: 0 1 auto;
+        
     }
 
     .campo {
@@ -76,9 +82,30 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
         padding: 3px;
         margin: 3px 0px;
         text-align: left;
-        border-radius: 3px;
+        border-radius: 10px;
         border: none;
+        display: flex;
+        flex-flow: row nowrap;
         width: 100%;
         height: 50px;
+    }
+
+    input {
+        width: 400px;
+        height: 44px;
+    }
+
+    .botao {
+        background-color: var(--btn-text);
+        border-radius: 16px;
+        color: var(--cor-login);
+        padding: 10px;
+        margin: 10px;
+    }
+
+    footer {
+        position: fixed;
+        top: 96%;
+        left: 43%
     }
 }
