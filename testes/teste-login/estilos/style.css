@@ -13,6 +13,7 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
         margin: 0;
         padding: 0;
         font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
     }
 
     body {
@@ -35,7 +36,7 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
         height: 99vh;
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         align-content: center;
     }
@@ -43,26 +44,16 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
     #login {
         background-color: white;
         width: 60%;
+        height: 70%;
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.360);
         overflow: hidden;
         border-radius: 15px;
         transition: width .3s, height .3s;
         transition-timing-function: ease;
-    }
-
-    #imagem {
-        overflow: hidden;
-        background: var(--cor-login) url(../imagens/imagem-tela-login.jpg);
-        width: 40%;
-        float: left; 
-        background-size: cover;
-        position: absolute;
-        top: 13%;
-        left: 58%;
-        height: 22%;
-        border-radius: 15px;
     }
 
     #formulario {
@@ -77,6 +68,11 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
         
     }
 
+    form {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
     .campo {
         background-color: var(--cor-destaque);
         padding: 3px;
@@ -86,6 +82,7 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
         border: none;
         display: flex;
         flex-flow: row nowrap;
+        flex: auto;
         width: 100%;
         height: 50px;
     }
@@ -93,6 +90,7 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
     input {
         width: 400px;
         height: 44px;
+        border: none;
     }
 
     .botao {
@@ -100,12 +98,33 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
         border-radius: 16px;
         color: var(--cor-login);
         padding: 10px;
-        margin: 10px;
+        width: 500px;
+        display: block;
+        margin: 15px;
+        border: 1px solid rgba(0, 0, 0, 0.360);
+    }
+
+    .botao:hover {
+        background-color: var(--btn-hover);
+        transition-duration: .3s;
+        cursor: pointer;
+    }
+
+    a {
+        color: var(--cor-login);
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    #github {
+        color: var(--btn-text);
     }
 
     footer {
-        position: fixed;
-        top: 96%;
-        left: 43%
+        background-color: var(--cor-login);
+        padding: 10px;
+        border-radius: 12px;
+        margin: auto;
+        width: 42%;
     }
 }

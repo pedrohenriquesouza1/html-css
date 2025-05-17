@@ -1,5 +1,29 @@
 @charset "UTF-8"; 
 
+@media screen and (min-width: 0px) and (max-width: 767px) {
+    main {
+        display: flex;
+        flex-flow: column-reverse wrap;
+     }
+
+     #login {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-end;
+        height: 90%;
+        width: 90%;
+        padding: 10px;
+     }
+
+     #formulario {
+        display: flex;
+        flex-flow: column nowrap;
+        flex: auto;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1099px) {
     body {
         height: 100vh;
@@ -17,20 +41,16 @@
         --cor-destaque: #27ae60;
      */ 
 
+     main {
+        display: flex;
+        flex-flow: column-reverse wrap;
+     }
+
      #login {
         width: 90%;
         height: 90%;  
         display: flex;
         flex-flow: column-reverse nowrap;      
-     }
-
-     #imagem {
-        overflow: hidden;
-        height: 100%;
-        padding: 0;
-        position: absolute;
-        top: 50%;
-        left: 0%;
      }
 
      #formulario {
