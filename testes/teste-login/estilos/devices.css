@@ -1,6 +1,24 @@
 @charset "UTF-8"; 
 
-@media screen and (min-width: 0px) and (max-width: 767px) {
+@media screen and (max-width: 590px) {
+   #login {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      box-sizing: border-box;
+   }
+
+   #formulario {
+      box-sizing: border-box;
+   }
+
+   form {
+      width: 400px;
+      height: 100px;
+   }
+}
+
+@media screen and (min-width: 591px) and (max-width: 767px) {
     main {
         display: flex;
         flex-flow: column-reverse wrap;

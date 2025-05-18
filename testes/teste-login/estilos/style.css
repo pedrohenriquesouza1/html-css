@@ -44,7 +44,7 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
     #login {
         background-color: white;
         width: 60%;
-        height: 70%;
+        height: 96%;
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -65,12 +65,15 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
         display: flex;
         flex-flow: column wrap;
         flex: 0 1 auto;
-        
+        justify-content: center;
+        align-items: center;
     }
 
     form {
+        width: 90%;
         display: flex;
         flex-flow: column wrap;
+        align-items: center;
     }
 
     .campo {
@@ -83,7 +86,7 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
         display: flex;
         flex-flow: row nowrap;
         flex: auto;
-        width: 100%;
+        width: 435px;
         height: 50px;
     }
 
@@ -93,12 +96,17 @@ Ultra grande (monitores 2K ou mais) / 1400px+ */
         border: none;
     }
 
+    #remember {
+        height: 19px;
+        width: 19px;
+    }
+
     .botao {
         background-color: var(--btn-text);
         border-radius: 16px;
         color: var(--cor-login);
         padding: 10px;
-        width: 500px;
+        width: 435px;
         display: block;
         margin: 15px;
         border: 1px solid rgba(0, 0, 0, 0.360);
