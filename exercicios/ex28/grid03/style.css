@@ -3,12 +3,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container-flex {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    flex: auto;
 }
 
 .container-grid {
@@ -16,14 +18,17 @@
     display: grid;
     height: 300px;
     width: 65vw;
-    grid-template: repeat(3, auto) / repeat(3, auto);
-    gap: 10px;
+    grid-template: repeat(3, 90px) / repeat(3, 90px);
+    grid-auto-rows: 300px;
+    grid-auto-columns: 300px;
+    grid-auto-flow: column; 
+    gap: 0px;
     place-items: center;
     place-content: center;
 }
 
 .item {
     border: 1px solid blue;
-    padding: 5px;
+    padding: 30px;
     text-align: center;
 }
